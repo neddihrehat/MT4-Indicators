@@ -1,5 +1,5 @@
 #property copyright "Nedd"
-#property link      "http://www.binaryoptionsedge.com/user/958-neddihrehat/"
+#property link      "www.binaryoptionsedge.com/user/958-neddihrehat/"
 #property version   "1.0"
 #property description "A Nice Value Chart that lets you control things you want and ignore things you don't want from a VC indicator. :) "
 
@@ -37,7 +37,7 @@ extern bool EnableColoredLevelLine = True;
 extern color UpColor = Green;
 extern color DownColor = Red;
 
-extern bool EnablePriceLine = false;
+extern bool EnablePriceLine = False;
 extern color PriceLineColor = Black;
 
 
@@ -104,6 +104,9 @@ int deinit() {
 
 
 int start() {
+   if (MaxBars>Bars){
+      MaxBars = Bars;
+   }
    
    double SUM;
    double MVA;

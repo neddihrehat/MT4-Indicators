@@ -1,5 +1,5 @@
 #property copyright "Nedd"
-#property link      "www.binaryoptionsedge.com/user/958-neddihrehat/"
+#property link      "http://www.binaryoptionsedge.com/user/958-neddihrehat/"
 #property version   "1.0"
 #property description "A Nice Value Chart that lets you control things you want and ignore things you don't want from a VC indicator. :) "
 
@@ -201,21 +201,21 @@ int start() {
    if(EnableColoredLevelLine == true){
       string UplineName = IndicatorName +  " OB";
           
-      ObjectCreate("UplineName", OBJ_HLINE, CreatedObjects, 0, OBLevel);
-      ObjectSet("UplineName", OBJPROP_COLOR, UpColor);
-      ObjectSet("UplineName", OBJPROP_SELECTABLE, FALSE);
+      ObjectCreate(UplineName, OBJ_HLINE, CreatedObjects, 0, OBLevel);
+      ObjectSet(UplineName, OBJPROP_COLOR, UpColor);
+      ObjectSet(UplineName, OBJPROP_SELECTABLE, FALSE);
    
       string DownlineName = IndicatorName +  " OS";  
-      ObjectCreate("DownlineName", OBJ_HLINE, CreatedObjects, 0, OSLevel);
-      ObjectSet("DownlineName", OBJPROP_COLOR, DownColor);
-      ObjectSet("DownlineName", OBJPROP_SELECTABLE, FALSE);
+      ObjectCreate(DownlineName, OBJ_HLINE, CreatedObjects, 0, OSLevel);
+      ObjectSet(DownlineName, OBJPROP_COLOR, DownColor);
+      ObjectSet(DownlineName, OBJPROP_SELECTABLE, FALSE);
    }
 
    if(EnablePriceLine == true){
       string PricelineName = IndicatorName +  " Price";
-      ObjectCreate("PricelineName", OBJ_HLINE, CreatedObjects, 0, CC[0]);
-      ObjectSet("PricelineName", OBJPROP_COLOR, PriceLineColor);
-      ObjectSet("PricelineName", OBJPROP_SELECTABLE, FALSE);
+      ObjectCreate(PricelineName, OBJ_HLINE, CreatedObjects, 0, CC[0]);
+      ObjectSet(PricelineName, OBJPROP_COLOR, PriceLineColor);
+      ObjectSet(PricelineName, OBJPROP_SELECTABLE, FALSE);
    }
    
    return (0);

@@ -27,9 +27,9 @@ extern string Note2 = "____________Design And Alerts____________";
 extern bool Alerts = True;
 extern bool SoundOnly = False;
 extern string SoundOnlyFile = "alert.wav";
-extern int CandleSize=4;
-extern color Up = LimeGreen;
-extern color Down = Orange;
+extern int CandleSize=5;
+extern color Up = Silver;
+extern color Down = Silver;
 extern color OB= Green;
 extern color OS= Red;
 
